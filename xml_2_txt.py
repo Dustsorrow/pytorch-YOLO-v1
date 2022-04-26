@@ -2,11 +2,11 @@ import xml.etree.ElementTree as ET
 import os
 
 VOC_CLASSES = (    # always index 0
-    'aeroplane', 'bicycle', 'bird', 'boat',
-    'bottle', 'bus', 'car', 'cat', 'chair',
-    'cow', 'diningtable', 'dog', 'horse',
-    'motorbike', 'person', 'pottedplant',
-    'sheep', 'sofa', 'train', 'tvmonitor')
+    'Two', 'Congratulation', 'Heart_single', 'OK',
+    'Heart_1', 'Nine', 'One', 'Four', 'Insult',
+    'Heart_3', 'ILY', 'Eight', 'Seven', 'Honour', 'Heart_2',
+    'Five', 'Thumb_up', 'Fist', 'Thumb_down', 'Three',
+    'Six', 'Rock', 'Prayer', 'Palm_up')
 
 def parse_rec(filename):
     """ Parse a PASCAL VOC xml file """
