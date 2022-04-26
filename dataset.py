@@ -104,10 +104,10 @@ class yoloDataset(data.Dataset):
         '''
         boxes (tensor) [[x1,y1,x2,y2],[]]
         labels (tensor) [...]
-        return 7x7x30
+        return 7x7x34
         '''
         grid_num = 14
-        target = torch.zeros((grid_num,grid_num,30))
+        target = torch.zeros((grid_num,grid_num,34))
         cell_size = 1./grid_num
         wh = boxes[:,2:]-boxes[:,:2]
         cxcy = (boxes[:,2:]+boxes[:,:2])/2
