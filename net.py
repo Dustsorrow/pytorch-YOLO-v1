@@ -59,7 +59,7 @@ class VGG(nn.Module):
         x = x.view(x.size(0), -1)
         x = self.classifier(x)
         x = F.sigmoid(x) #归一化到0-1
-        x = x.view(-1,7,7,30)
+        x = x.view(-1,7,7,34)
         return x
 
     def _initialize_weights(self):
